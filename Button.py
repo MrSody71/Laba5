@@ -1,9 +1,10 @@
-import tkinter as ttk
+from tkinter import *
+from tkinter import ttk
 
-root = ttk.Tk()
+root = Tk()
 root.title("Кнопка")
-root.geometry("600x500+550+250")
-root.minsize(600, 500)
+root.geometry("600x600+550+250")
+root.minsize(600, 600)
 
 clicks = 0
 
@@ -16,6 +17,7 @@ def click():
     print(btn["text"])
 
 btn = ttk.Button(root, text="<Нажми сюда!>", command=click)
-btn.pack()
+btn.place(relx=.5, rely=.5, anchor="c", relwidth=.4, relheight=.25  )
+root.mainloop()
 
 root.mainloop()
