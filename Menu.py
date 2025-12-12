@@ -1,7 +1,7 @@
 from tkinter import *
 
 root = Tk()
-root.title("METANIT.COM")
+root.title("Menu")
 root.geometry("250x150")
 
 root.option_add("*tearOff", FALSE)
